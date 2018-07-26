@@ -3,7 +3,9 @@ package com.meltsan.backEnd.persona.service;
 import java.util.List;
 
 import com.meltsan.backEnd.vo.PersonaVo;
+import com.meltsan.backEnd.vo.PaisVo;
 
 public interface PersonaService {
-	List<PersonaVo> getAll();
+	List<PersonaVo> getAllPersonas();
+	PaisVo getPais();
 }

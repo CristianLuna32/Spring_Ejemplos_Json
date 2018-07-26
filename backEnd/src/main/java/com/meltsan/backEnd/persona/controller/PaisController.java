@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.meltsan.backEnd.persona.service.PersonaService;
-import com.meltsan.backEnd.vo.PersonaVo;
+import com.meltsan.backEnd.vo.PaisVo;
 
 @RestController
-public class personaController {
-	
+public class PaisController {
 	@Autowired
 	private PersonaService personaService;
 	
-	@RequestMapping("/getPersonas")
-	public List<PersonaVo> getPersonas(){
-		return personaService.getAllPersonas();
+	@RequestMapping("/pais")
+	public PaisVo pais(){
+		return personaService.getPais();
 	}
 }

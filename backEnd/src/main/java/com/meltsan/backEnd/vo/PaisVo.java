@@ -1,40 +1,40 @@
 package com.meltsan.backEnd.vo;
 
-public class PaisVo {
-	private String ciudad1;
-	private String ciudad2;
+import java.util.List;
+
+public class PaisVo{
+	private String ciudad;
+	private List<PersonaVo> persona;
 	
 	
-	public PaisVo(String ciudad1, String ciudad2) {
-		this.ciudad1 = ciudad1;
-		this.ciudad2 = ciudad2;
+
+	public PaisVo(String ciudad, List<PersonaVo> persona) {
+		super();
+		this.ciudad = ciudad;
+		this.persona = persona;
 	}
 
-
-	public String getCiudad1() {
-		return ciudad1;
+	public String getCiudad() {
+		return ciudad;
 	}
 
-
-	public void setCiudad1(String ciudad1) {
-		this.ciudad1 = ciudad1;
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
 	}
 
-
-	public String getCiudad2() {
-		return ciudad2;
+	public List<PersonaVo> getPersona() {
+		return persona;
 	}
 
-
-	public void setCiudad2(String ciudad2) {
-		this.ciudad2 = ciudad2;
+	public void setPersona(List<PersonaVo> persona) {
+		this.persona = persona;
 	}
-
 
 	@Override
 	public String toString() {
-		return "paisVo [ciudad1=" + ciudad1 + ", ciudad2=" + ciudad2 + "]";
-	};
+		return "PaisVo [ciudad=" + ciudad + ", persona=" + persona + "]";
+	}
+
 	
 	
 }

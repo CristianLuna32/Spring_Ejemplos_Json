@@ -1,10 +1,11 @@
 package com.meltsan.backEnd.vo;
 
-public class PersonaVo {
+public class PersonaVo{
 	private String nombre;
 	private String apellido;
 	private int edad;
 	
+
 	public PersonaVo(String nombre, String apellido, int edad) {
 		this.nombre = nombre;
 		this.apellido = apellido;

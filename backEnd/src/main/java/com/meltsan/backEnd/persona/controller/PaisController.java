@@ -15,7 +15,7 @@ public class PaisController {
 	private PersonaService personaService;
 	
 	@RequestMapping("/pais")
-	public PaisVo pais(){
+	public List<PaisVo> pais(){
 		return personaService.getPais();
 	}
 }

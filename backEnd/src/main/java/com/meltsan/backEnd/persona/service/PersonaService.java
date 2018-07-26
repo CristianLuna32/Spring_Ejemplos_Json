@@ -7,5 +7,5 @@ import com.meltsan.backEnd.vo.PaisVo;
 
 public interface PersonaService {
 	List<PersonaVo> getAllPersonas();
-	PaisVo getPais();
+	List<PaisVo> getPais();
 }

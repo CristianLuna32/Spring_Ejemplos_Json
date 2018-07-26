@@ -22,7 +22,10 @@ public class PersonaServiceImpl implements PersonaService{
 		return persona;
 	}
 	
-	public PaisVo getPais(){
-		return new PaisVo ("Oaxaca","Chiapas");
+	public List<PaisVo> getPais(){
+		List<PaisVo> pais=new ArrayList<PaisVo>();
+		pais.add(new PaisVo("Oaxaca",getAllPersonas()));
+		pais.add(new PaisVo("Chiapas",getAllPersonas()));
+		return pais;
 	}
 }
